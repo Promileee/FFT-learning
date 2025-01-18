@@ -31,3 +31,13 @@ Conversely, the Inverse Discrete Fourier Transform (IDFT) to recover the origina
 $$ x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{\frac{2\pi i}{N} kn} $$
 
 This pair of transforms allows for the analysis and synthesis of discrete-time signals in the frequency-domain.
+## Overview of the Files
+Herein, I have uploaded a series of files for documentation. Below are detailed descriptions of each file:
+### sound_wave.wav
+`sound_wave.wav` is a WAV-formatted audio file that encapsulates an audio recording. Given that sound waves constitute a type of continuous-time signal, this audio file serves as the basis for analyzing composite signals by decomposing them into their discrete frequency components through spectral analysis.
+### File_1.ipynb
+`File_1.ipynb` is a Jupyter Notebook document that records the process of extracting audio data from `sound_wave.wav` and demonstrates the application of the Fast Fourier Transform (FFT) algorithm using NumPy's library to perform frequency-domain transformation on the signal.
+### File_1_MATLAB.m
+`File_1_MATLAB.m` replicates the functionality of `File_1.ipynb` but employs the MATLAB environment for FFT computations. This comparative experiment aims to evaluate the performance difference between Python and MATLAB when executing FFT tasks.
+### File_2.ipynb
+`File_2.ipynb` is also a Jupyter Notebook file where a complex signal is synthesized, and both FFT and Inverse Fast Fourier Transform (IFFT) are applied using NumPy's functions to transform the signal between the frequency and time domains. Subsequently, a comparative analysis is conducted between the original and reconstructed signals.
