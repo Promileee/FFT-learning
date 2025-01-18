@@ -12,7 +12,7 @@ where:
 - $` \omega `$ denotes the angular frequency (in radians per second),
 - $` i `$ is the imaginary unit with the property $` i^2 = -1 `$,
 - $` t `$ represents time.
-Conversely, the inverse Continuous Fourier Transform to recover $` f(t) `$ from $` F(\omega) `$ is given by:
+Conversely, the Inverse Continuous Fourier Transform (ICFT) to recover $` f(t) `$ from $` F(\omega) `$ is given by:
 
 $$ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) \cdot e^{i\omega t} \ d\omega $$
 
@@ -22,3 +22,12 @@ Given a sequence of $` N `$ complex numbers $` x[n] `$, where $` n = 0, 1, 2, ..
 
 $$ X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-\frac{2\pi i}{N} kn} $$
 
+where:
+- $` X[k] `$ represents the frequency-domain representation of the sequence,
+- $` k `$ is the discrete frequency index, with $` k = 0, 1, 2, ..., N-1 `$,
+- $` i `$ is the imaginary unit, with the property $` i^2 = -1 `$.
+Conversely, the Inverse Discrete Fourier Transform (IDFT) to recover the original squence $` x[n] `$ from $` X[k] `$ is given by:
+
+$$ x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{\frac{2\pi i}{N} kn} $$
+
+This pair of transforms allows for the analysis and synthesis of discrete-time signals in the frequency-domain.
