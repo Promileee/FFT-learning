@@ -5,7 +5,7 @@ The Fourier Transform (FT) constitutes a sophisticated mathematical technique th
 ## The formula for the Continuous Fourier Transform (CFT)
 Given a time-domain function $$ f(t) $$, its Continuous Fourier Transform $$ F(\omega) $$ is defined by the following integral:
 
-$ F(\omega) = \int_{-\infty}^{\infty} f(t) \cdot e^{-i\omega t} \, dt $
+$` F(\omega) = \int_{-\infty}^{\infty} f(t) \cdot e^{-i\omega t} \, dt `$
 
 where:
 - $ F(\omega) $ represents the frequency-domain representation of the function,
