@@ -20,5 +20,5 @@ This pair of transforms allows for the analysis and synthesis of time-domain sig
 ## The formula for the Discrete Fourier Transform
 Given a sequence of $` N `$ complex numbers $` x[n] `$, where $` n = 0, 1, 2, ..., N-1 `$, its Discrete Fourier Transform $` X[k] `$ is defined by the sum:
 
-$$ X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-frac{2\pi i}{N} kn} $$
+$$ X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-\frac{2\pi i}{N} kn} $$
 
