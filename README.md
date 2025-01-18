@@ -14,6 +14,6 @@ where:
 - $` t `$ represents time.
 Conversely, the inverse Continuous Fourier Transform to recover $` f(t) `$ from $` F(\omega) `$ is given by:
 
-$$ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) \cdot e^{i\omega t} \, d\omega $$
+$$ f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) \cdot e^{i\omega t} \ d\omega $$
 
 This pair of transforms allows for the analysis and synthesis of time-domain signals in the frequency domain.
